@@ -58,6 +58,11 @@ This is the **onboarding knowledge gap.** The "why" behind every technical decis
 
 The ROI is direct: fewer interruptions to senior engineers, faster ramp-up per hire, and measurable cost savings. For a company hiring 20 engineers a year, shaving 30 days off onboarding recovers hundreds of thousands of dollars in engineering output.
 
+**HR and Talent teams**, since high early-churn from poor onboarding directly inflates recruiting costs.
+
+**Team leads and department heads** who own headcount budgets and feel the productivity loss directly.
+
+**Large enterprises** running structured L&D (Learning & Development) programs as a line item.
 ---
 
 ## Existing Alternatives
@@ -90,6 +95,8 @@ None of them can answer *"Why was Redis chosen over Memcached in 2023?"* — bec
 ## Our Solution
 
 AI Onboarding Buddy reads your GitHub repo — code, commits, and PRs — and builds a knowledge graph that maps what your system does, when it changed, and why decisions were made. New engineers ask questions in plain English and get answers grounded in your actual history.
+
+Make your developement much easier to understand.
 
 > *"Why are we using JWT?"*
 > PR #124: "Sessions caused DB overload at 10k users. JWT reduced latency by 5x. Approved by tech lead, Mar 2023."
