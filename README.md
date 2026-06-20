@@ -7,16 +7,16 @@
 
 ---
 
-## Table of Contents
+## Table of Contents 
 
-1. [The Problem](#the-problem)
-2. [Who Has It?](#who-has-this-problem)
-3. [Evidence the Pain is Real](#evidence-the-pain-is-real)
-4. [Who Pays?](#who-pays)
-5. [Existing Alternatives](#existing-alternatives)
-6. [Our Solution](#our-solution)
-7. [How It Works](#how-it-works--agent-architecture)
-8. [MVP Plan](#scoped-mvp-plan)
+1. [The Problem](#the-problem).
+2. [Who Has It?](#who-has-this-problem).
+3. [Evidence the Pain is Real](#evidence-the-pain-is-real).
+4. [Who Pays?](#who-pays).
+5. [Existing Alternatives](#existing-alternatives).
+6. [Our Solution](#our-solution).
+7. [How It Works](#how-it-works--agent-architecture).
+8. [MVP Plan](#scoped-mvp-plan).
 
 ---
 
