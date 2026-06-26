@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/codebase_onboarding.egg-info/PKG-INFO
+src/codebase_onboarding.egg-info/SOURCES.txt
+src/codebase_onboarding.egg-info/dependency_links.txt
+src/codebase_onboarding.egg-info/requires.txt
+src/codebase_onboarding.egg-info/top_level.txt
+src/ingestion/github_client.py
