@@ -15,24 +15,14 @@ class KnowledgeGraph:
         # Initialize Vector DB
         self.chroma_client = chromadb.PersistentClient(path=db_path)
         
-        # Setup OpenAI Embeddings if available to avoid ONNX/sentence-transformers issues on Windows
-        openai_key = os.environ.get("OPENAI_API_KEY")
-        if openai_key:
-            self.ef = embedding_functions.OpenAIEmbeddingFunction(
-                api_key=openai_key,
-                model_name="text-embedding-3-small"
-            )
-        else:
-            self.ef = None # Will fallback to default ONNX model
+        self.ef = None # Force fallback to default local ONNX model
             
         # Collections for different types of embeddings
         self.code_collection = self.chroma_client.get_or_create_collection(
-            name="code_snippets", 
-            embedding_function=self.ef if self.ef else None
+            name="code_snippets_v3"
         )
         self.decision_collection = self.chroma_client.get_or_create_collection(
-            name="pr_decisions", 
-            embedding_function=self.ef if self.ef else None
+            name="pr_decisions_v3"
         )
         
     def add_commit(self, sha: str, author: str, message: str):

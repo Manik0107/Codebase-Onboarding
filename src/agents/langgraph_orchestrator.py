@@ -24,7 +24,8 @@ class OnboardingOrchestrator:
                 openai_api_base="https://openrouter.ai/api/v1",
                 openai_api_key=self.api_key,
                 model_name="meta-llama/llama-3.1-8b-instruct", # Defaulting to a solid model on OpenRouter
-                temperature=0
+                temperature=0,
+                max_tokens=800 # Limit maximum tokens to prevent OpenRouter upfront cost rejection
             )
         else:
             self.llm = None

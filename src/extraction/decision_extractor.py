@@ -15,7 +15,8 @@ class DecisionExtractor:
                 openai_api_base="https://openrouter.ai/api/v1",
                 openai_api_key=self.api_key,
                 model_name="meta-llama/llama-3.1-8b-instruct",
-                temperature=0
+                temperature=0,
+                max_tokens=300 # Limit maximum tokens to prevent OpenRouter upfront cost rejection
             )
         else:
             self.llm = None
